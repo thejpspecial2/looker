@@ -58,7 +58,7 @@
     
   - measure: d2_retained
     type: sum
-    sql: d2_retained
+    sql: ${TABLE}.d2_retained
 
   - measure: d30_installs_offset
     type: sum
