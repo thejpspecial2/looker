@@ -172,6 +172,11 @@
     type: number
     sql: ${revenue_apple}/NULLIF(${dau}, 0)
     value_format_name: usd
+
+  - measure: arppu_apple
+    type: number
+    sql: ${revenue_apple}/NULLIF(${purchasers}, 0)
+    value_format_name: usd
     
   - measure: sessions
     type: sum
