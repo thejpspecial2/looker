@@ -10,10 +10,6 @@
     type: sum
     sql: ${TABLE}.d0_app_starts
 
-  - measure: d0_app_starts_med
-    type: sum
-    sql: ${TABLE}.d0_app_starts_med
-
   - measure: d0_conv
     type: sum
     sql: ${TABLE}.d0_conv
@@ -73,14 +69,9 @@
     sql: ${d14_value}/NULLIF(${player_count}, 0)
     value_format_name: usd  
 
-
   - measure: d14_app_starts
     type: sum
     sql: ${TABLE}.d14_app_starts
-
-  - measure: d14_app_starts_med
-    type: number
-    sql: ${TABLE}.d14_app_starts_med
 
   - measure: d14_conv
     type: sum
@@ -103,10 +94,6 @@
     type: sum
     sql: ${TABLE}.d1_app_starts
 
-  - measure: d1_app_starts_med
-    type: number
-    sql: ${TABLE}.d1_app_starts_med
-
   - measure: d1_conv
     type: sum
     sql: ${TABLE}.d1_conv
@@ -128,10 +115,6 @@
     type: sum
     sql: ${TABLE}.d3_app_starts
 
-  - measure: d3_app_starts_med
-    type: number
-    sql: ${TABLE}.d3_app_starts_med
-
   - measure: d3_conv
     type: sum
     sql: ${TABLE}.d3_conv
@@ -152,10 +135,6 @@
   - measure: d7_app_starts
     type: sum
     sql: ${TABLE}.d7_app_starts
-
-  - measure: d7_app_starts_med
-    type: number
-    sql: ${TABLE}.d7_app_starts_med
 
   - measure: d7_conv
     type: sum
