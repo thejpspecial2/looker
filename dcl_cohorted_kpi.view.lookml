@@ -84,6 +84,7 @@
   - measure: d14_retention
     type: number
     sql: ${d14_retained}/${player_count}    
+    value_format_name: percent_1
 
   - measure: d14_value
     type: sum
@@ -105,6 +106,7 @@
   - measure: d1_retention
     type: number
     sql: ${d1_retained}/${player_count}
+    value_format_name: percent_1
     
   - measure: d1_value
     type: sum
@@ -125,7 +127,8 @@
     
   - measure: d3_retention
     type: number
-    sql: ${d3_retained}/${player_count}    
+    sql: ${d3_retained}/${player_count}  
+    value_format_name: percent_1
 
   - measure: d3_value
     type: sum
@@ -147,6 +150,7 @@
   - measure: d7_retention
     type: number
     sql: ${d7_retained}/${player_count}    
+    value_format_name: percent_1
 
   - measure: d7_value
     type: sum
