@@ -89,6 +89,10 @@
   - measure: d14_retained
     type: sum
     sql: ${TABLE}.d14_retained
+    
+  - measure: d14_retention
+    type: number
+    sql: ${d14_retained}/${player_count}    
 
   - measure: d14_value
     type: sum
@@ -110,7 +114,11 @@
   - measure: d1_retained
     type: sum
     sql: ${TABLE}.d1_retained
-
+    
+  - measure: d1_retention
+    type: number
+    sql: ${d1_retained}/${player_count}
+    
   - measure: d1_value
     type: sum
     sql: ${TABLE}.d1_value
@@ -131,6 +139,10 @@
   - measure: d3_retained
     type: sum
     sql: ${TABLE}.d3_retained
+    
+  - measure: d3_retention
+    type: number
+    sql: ${d3_retained}/${player_count}    
 
   - measure: d3_value
     type: sum
@@ -152,16 +164,15 @@
   - measure: d7_retained
     type: sum
     sql: ${TABLE}.d7_retained
+    
+  - measure: d7_retention
+    type: number
+    sql: ${d7_retained}/${player_count}    
 
   - measure: d7_value
     type: sum
     sql: ${TABLE}.d7_value
     value_format_name: usd
-
-  - measure: gini
-    type: sum
-    sql: ${TABLE}.gini
-    value_format_name: decimal_2
 
   - measure: iap_transactions
     type: sum
@@ -170,14 +181,14 @@
   - dimension: install_date
     type: string
     sql: ${TABLE}.install_date
-
-  - measure: median_app_launch
-    type: number
-    sql: ${TABLE}.median_app_launch
-
-  - measure: median_time_spent
-    type: number
-    sql: ${TABLE}.median_time_spent
+    
+  - dimension: country
+    type: string
+    sql: ${TABLE}.country
+    
+  - dimension: organic_indicator
+    type: string
+    sql: ${TABLE}.organic_indicator  
 
   - measure: organic_count
     type: sum
@@ -192,7 +203,6 @@
     sql: ${organic_count}/NULLIF(${player_count}, 0)
     value_format_name: percent_1
         
-
   - measure: spend_net_usd
     type: sum
     sql: ${TABLE}.spend_net_usd
