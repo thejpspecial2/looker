@@ -25,7 +25,7 @@
     sql: ${TABLE}.num_jobs
 
   - measure: queued
-    type: number
+    type: sum
     sql: ${TABLE}.queued
 
   - measure: running
