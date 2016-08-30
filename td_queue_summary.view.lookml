@@ -8,11 +8,11 @@
     sql: ${TABLE}.id
 
   - measure: error
-    type: number
+    type: sum
     sql: ${TABLE}.error
 
   - measure: killed
-    type: number
+    type: sum
     sql: ${TABLE}.killed
 
   - dimension_group: measure
@@ -21,7 +21,7 @@
     sql: ${TABLE}.measure_time
 
   - measure: num_jobs
-    type: number
+    type: sum
     sql: ${TABLE}.num_jobs
 
   - measure: queued
@@ -29,15 +29,15 @@
     sql: ${TABLE}.queued
 
   - measure: running
-    type: number
+    type: sum
     sql: ${TABLE}.running
 
   - measure: status
-    type: number
+    type: sum
     sql: ${TABLE}.status
 
   - measure: success
-    type: number
+    type: sum
     sql: ${TABLE}.success
 
   - measure: count
