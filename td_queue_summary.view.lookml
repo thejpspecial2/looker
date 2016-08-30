@@ -7,11 +7,11 @@
     type: number
     sql: ${TABLE}.id
 
-  - dimension: error
+  - measure: error
     type: number
     sql: ${TABLE}.error
 
-  - dimension: killed
+  - measure: killed
     type: number
     sql: ${TABLE}.killed
 
@@ -20,23 +20,23 @@
     timeframes: [time, date, week, month]
     sql: ${TABLE}.measure_time
 
-  - dimension: num_jobs
+  - measure: num_jobs
     type: number
     sql: ${TABLE}.num_jobs
 
-  - dimension: queued
+  - measure: queued
     type: number
     sql: ${TABLE}.queued
 
-  - dimension: running
+  - measure: running
     type: number
     sql: ${TABLE}.running
 
-  - dimension: status
+  - measure: status
     type: number
     sql: ${TABLE}.status
 
-  - dimension: success
+  - measure: success
     type: number
     sql: ${TABLE}.success
 
