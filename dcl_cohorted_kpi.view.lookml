@@ -169,6 +169,10 @@
     type: string
     sql: ${TABLE}.country
     
+  - dimension: network
+    type: string
+    sql: ${TABLE}.network
+    
   - dimension: organic_indicator
     type: string
     sql: ${TABLE}.organic_indicator  
@@ -180,11 +184,6 @@
   - measure: player_count
     type: sum
     sql: player_count
-  
-  - measure: pct_organic
-    type: number
-    sql: ${organic_count}/NULLIF(${player_count}, 0)
-    value_format_name: percent_1
         
   - measure: spend_net_usd
     type: sum
