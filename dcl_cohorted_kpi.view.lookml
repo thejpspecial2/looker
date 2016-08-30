@@ -172,14 +172,6 @@
   - dimension: network
     type: string
     sql: ${TABLE}.network
-    
-  - dimension: organic_indicator
-    type: string
-    sql: ${TABLE}.organic_indicator  
-
-  - measure: organic_count
-    type: sum
-    sql: organic_count
 
   - measure: player_count
     type: sum
