@@ -26,11 +26,11 @@
     type: string
     sql: ${TABLE}.network
 
-  - dimension: spend_net_usd
+  - measure: spend_net_usd
     type: sum
     sql: ${TABLE}.spend_net_usd
 
-  - dimension: transaction_count
+  - measure: transaction_count
     type: sum
     sql: ${TABLE}.transaction_count
 
