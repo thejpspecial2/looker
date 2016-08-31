@@ -14,8 +14,8 @@
     type: string
     sql: ${TABLE}.iap_package_id
 
-  - dimension: idfv
-    type: string
+  - measure: idfv
+    type: count_distinct
     sql: ${TABLE}.idfv
 
   - dimension: install_date
@@ -29,6 +29,7 @@
   - measure: spend_net_usd
     type: sum
     sql: ${TABLE}.spend_net_usd
+    value_format_name: usd_0
 
   - measure: transaction_count
     type: sum
