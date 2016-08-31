@@ -7,7 +7,7 @@
     sql: ${TABLE}.country
 
   - dimension: date
-    type: time
+    type: string
     sql: ${TABLE}.date
 
   - dimension: iap_package_id
