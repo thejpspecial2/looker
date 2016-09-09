@@ -33,6 +33,7 @@
   - measure: total_spend_usd
     type: sum
     sql: ${TABLE}.total_spend_usd
+    value_format_name: usd
 
   - measure: transactions
     type: sum
