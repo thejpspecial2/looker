@@ -3,7 +3,6 @@
 - include: "*.view.lookml"       # include all views in this project
 - include: "*.dashboard.lookml"  # include all dashboards in this project
 
-- explore: dcl_purchasers
 # # Select the views that should be a part of this model,
 # # and define the joins that connect them together.
 #
