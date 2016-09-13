@@ -585,17 +585,17 @@
     value_format_name: usd_0
 
   - measure: net_revenue_current_week
-    type: number
+    type: sum
     sql: ${TABLE}.net_revenue_current_week
     value_format_name: usd_0
 
   - measure: net_revenue_ltd
-    type: number
+    type: sum
     sql: ${TABLE}.net_revenue_ltd
     value_format_name: usd_0
 
   - measure: net_revenue_previous_week
-    type: number
+    type: sum
     sql: ${TABLE}.net_revenue_previous_week
     value_format_name: usd_0
 
@@ -613,11 +613,11 @@
     value_format_name: usd_0
 
   - measure: overall_max_rank
-    type: number
+    type: sum
     sql: ${TABLE}.overall_max_rank
 
   - measure: overall_min_rank
-    type: number
+    type: sum
     sql: ${TABLE}.overall_min_rank
 
   - measure: pos_installs
