@@ -541,7 +541,7 @@
     
   - measure: ConversionRate180
     type: number
-    sql: ${TABLE}.conversion_180/${TABLE}.installs_180
+    sql: AVG(${TABLE}.conversion_180)/AVG(${TABLE}.installs_180)
     value_format_name: percent_2
 
   - measure: installs_current_week
