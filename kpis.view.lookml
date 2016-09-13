@@ -117,7 +117,7 @@
     sql: ${TABLE}.conversion
 
   - measure: conversion_180
-    type: sum
+    type: number
     sql: ${TABLE}.conversion_180
 
   - measure: conversion_current_week
@@ -536,8 +536,13 @@
     sql: ${TABLE}.installs
 
   - measure: installs_180
-    type: sum
+    type: number
     sql: ${TABLE}.installs_180
+    
+  - measure: ConversionRate180
+    type: number
+    sql: SUM(${TABLE}.conversion_180)/SUM(${TABLE}.installs_180)
+    value_format_name: percent_2
 
   - measure: installs_current_week
     type: sum
