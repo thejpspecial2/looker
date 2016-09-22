@@ -7,7 +7,7 @@
 
   elements:
   - name: add_a_unique_name_1474579643
-    title: Untitled Visualization
+    title: TD Queue Summary
     type: looker_line
     model: td_queue_summary_model
     explore: td_queue_summary
