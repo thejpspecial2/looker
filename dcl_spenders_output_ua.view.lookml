@@ -33,6 +33,7 @@
   - measure: total_value
     type: sum
     sql: ${TABLE}.total_value
+    value_format_name: usd
 
   - measure: d0_conv
     type: sum
