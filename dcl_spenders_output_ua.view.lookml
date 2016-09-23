@@ -30,6 +30,10 @@
     type: string
     sql: ${TABLE}.platform   
 
+  - measure: total_value
+    type: sum
+    sql: ${TABLE}.total_value
+
   - measure: d0_conv
     type: sum
     sql: ${TABLE}.d0_conv
