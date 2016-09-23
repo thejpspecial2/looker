@@ -244,7 +244,12 @@
     type: sum
     sql: ${TABLE}.d7_pct
     value_format_name: percent_1
-
+  
+  - measure: d7_pct_calc
+    type: sum
+    sql: (${TABLE}.d7_pct * ${TABLE}.new_users)
+    value_format_name: percent_1
+    
   - measure: d7_pct_current_week
     type: sum
     sql: ${TABLE}.d7_pct_current_week
