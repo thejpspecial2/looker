@@ -25,6 +25,7 @@
   - measure: net_revenue
     type: sum
     sql: ${TABLE}.net_revenue
+    value_format: usd
 
   - dimension: network
     type: string
