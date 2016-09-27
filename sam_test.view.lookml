@@ -3,7 +3,7 @@
   fields:
 
   - dimension: _col6
-    type: number
+    type: sum
     sql: ${TABLE}._col6
 
   - dimension: country
@@ -40,7 +40,7 @@
     sql: ${TABLE}.network
 
   - dimension: num_count
-    type: number
+    type: sum
     sql: ${TABLE}.num_count
 
   - measure: count
