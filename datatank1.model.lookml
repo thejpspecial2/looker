@@ -19,4 +19,4 @@
 - explore: dcl_spenders_output_ua
 - explore: kpis
 - explore: td_queue_summary
-- explore: sam_test
+- explore: inj_adjust_purchase_trans

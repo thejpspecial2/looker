@@ -1,5 +1,5 @@
-- view: sam_test
-  sql_table_name: public.sam_test
+- view: inj_adjust_purchase_trans
+  sql_table_name: public.inj_adjust_purchase_trans
   fields:
 
   - dimension: country
@@ -22,7 +22,7 @@
     type: string
     sql: ${TABLE}.item
 
-  - dimension: net_revenue
+  - measure: net_revenue
     type: sum
     sql: ${TABLE}.net_revenue
 
@@ -30,13 +30,17 @@
     type: string
     sql: ${TABLE}.network
 
-  - dimension: num_count
+  - measure: num_count
     type: sum
     sql: ${TABLE}.num_count
 
   - dimension: unique_device
-    type: sum
+    type: number
     sql: ${TABLE}.unique_device
+
+  - measure: unique_users
+    type: count_distinct
+    sql: ${TABLE}.device_id
 
   - measure: count
     type: count
