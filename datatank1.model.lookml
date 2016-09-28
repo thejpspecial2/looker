@@ -20,3 +20,4 @@
 - explore: kpis
 - explore: td_queue_summary
 - explore: inj_adjust_purchase_trans
+- explore: inj_adjust_items_trans
