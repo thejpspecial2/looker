@@ -24,7 +24,7 @@
 
   - dimension: platform
     type: string
-    sql: ${TABLE}.Platform
+    sql: ${TABLE}.platform
 
   - measure: unique_users
     type: sum
