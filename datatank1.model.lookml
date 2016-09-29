@@ -22,3 +22,4 @@
 - explore: inj_adjust_purchase_trans
 - explore: inj_adjust_items_trans
 - explore: inj_adjust_mp_chall_starts
+- explore: ess_adjust_events
