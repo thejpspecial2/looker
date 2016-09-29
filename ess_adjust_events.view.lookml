@@ -1,5 +1,5 @@
-- view: extra_slots_adjust
-  sql_table_name: public.Extra_slots_Adjust
+- view: ess_adjust_events
+  sql_table_name: public.ess_adjust_events
   fields:
 
   - dimension: country
