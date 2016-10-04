@@ -113,10 +113,12 @@
   - measure: revenue_adjust
     type: sum
     sql: ${TABLE}.revenue_adjust
+    value_format_name: usd
 
   - measure: revenue_apple
     type: sum
     sql: ${TABLE}.revenue_apple
+    value_format_name: usd
 
   - measure: sessions
     type: sum
