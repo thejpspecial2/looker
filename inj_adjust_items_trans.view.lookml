@@ -15,10 +15,10 @@
     type: string
     sql: ${TABLE}.item
     
-  - dimension: unique_key
-    hidden: true
-    primary_key: true
-    sql: CONCAT(${device_id}, ${item})
+#  - dimension: unique_key
+ #   hidden: true
+  #  primary_key: true
+   # sql: CONCAT(${device_id}, ${item})
 
   - measure: num_count
     type: sum
