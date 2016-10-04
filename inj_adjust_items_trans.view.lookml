@@ -5,6 +5,11 @@
   - dimension: device_id
     type: string
     sql: ${TABLE}.device_id
+    
+  - dimension: unique_key
+    hidden: true
+    primary_key: true
+    sql: CONCAT(${device_id}, ${item})
 
   - dimension: item
     type: string

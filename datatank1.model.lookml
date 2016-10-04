@@ -19,8 +19,22 @@
 - explore: dcl_spenders_output_ua
 - explore: kpis
 - explore: td_queue_summary
-- explore: inj_adjust_purchase_trans
+#- explore: inj_adjust_purchase_trans
 - explore: inj_adjust_items_trans
 - explore: inj_adjust_mp_chall_starts
 - explore: ess_adjust_events
 - explore: ess_ios_daily_kpi
+
+
+- explore: inj_adjust_purchase_trans
+  joins:
+    - join: inj_adjust_items_trans
+      sql_on: ${inj_adjust_items_trans.device_id} = ${inj_adjust_purchase_trans.device_id}
+      relationship: many_to_many
+
+
+
+# - explore: inj_users
+#   joins:
+#     - join: inj_adjust_purchase_trans
+#       sql_on: ${inj_users.device_id} = ${inj_adjust_purchase_trans.device_id}

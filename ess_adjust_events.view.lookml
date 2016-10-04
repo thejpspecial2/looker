@@ -5,6 +5,7 @@
   - dimension: country
     type: string
     sql: ${TABLE}.country
+    
 
   - dimension: date
     type: string

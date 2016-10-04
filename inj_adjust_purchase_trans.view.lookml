@@ -13,6 +13,11 @@
   - dimension: device_id
     type: string
     sql: ${TABLE}.device_id
+    
+  - dimension: unique_key
+    hidden: true
+    primary_key: true
+    sql: CONCAT(${date}, ${device_id}, ${event}, ${item})
 
   - dimension: event
     type: string
