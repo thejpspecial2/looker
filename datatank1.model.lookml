@@ -24,7 +24,7 @@
 - explore: inj_adjust_mp_chall_starts
 - explore: ess_adjust_events
 - explore: ess_ios_daily_kpi
-
+- explore: ess_ios_dash
 
 - explore: inj_adjust_purchase_trans
   joins:
