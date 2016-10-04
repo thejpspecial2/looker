@@ -27,10 +27,6 @@
     type: string
     sql: ${TABLE}.item
     
-#  - dimension: unique_key
- #   hidden: true
-  #  primary_key: true
-   # sql: CONCAT(${date}, ${device_id}, ${event}, ${item})
 
   - measure: net_revenue
     type: sum
