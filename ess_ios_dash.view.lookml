@@ -79,7 +79,7 @@
     sql: ${TABLE}.d7_retained_offset
 
   - dimension: date
-    type: string
+    type: date
     sql: ${TABLE}.date
 
   - measure: dau
