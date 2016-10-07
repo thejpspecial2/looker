@@ -5,18 +5,22 @@
   - dimension: avg_player_level
     type: number
     sql: ${TABLE}.avg_player_level
+    value_format_name: decimal_1
 
   - dimension: avg_player_level_1st_play
     type: number
     sql: ${TABLE}.avg_player_level_1st_play
+    value_format_name: decimal_1
 
   - dimension: avg_powerscore
     type: number
     sql: ${TABLE}.avg_powerscore
+    value_format_name: decimal_0
 
   - dimension: avg_powerscore_1st_play
     type: number
     sql: ${TABLE}.avg_powerscore_1st_play
+    value_format_name: decimal_0
 
   - dimension: battle_desc
     type: string
