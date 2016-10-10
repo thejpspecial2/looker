@@ -42,7 +42,12 @@
   - measure: d14_conv_rate
     type: number
     sql: ${d14_conv}/NULLIF(${player_count}, 0)
-    value_format_name: percent_2        
+    value_format_name: percent_2     
+    
+  - measure: d30_conv_rate
+    type: number
+    sql: ${d30_conv}/NULLIF(${player_count}, 0)
+    value_format_name: percent_2     
   
   - measure: d0_value_per_player
     type: number
@@ -68,7 +73,12 @@
     type: number
     sql: ${d14_value}/NULLIF(${player_count}, 0)
     value_format_name: usd  
-
+  
+  - measure: d30_value_per_player
+    type: number
+    sql: ${d30_value}/NULLIF(${player_count}, 0)
+    value_format_name: usd  
+    
   - measure: d14_app_starts
     type: sum
     sql: ${TABLE}.d14_app_starts
@@ -77,18 +87,36 @@
     type: sum
     sql: ${TABLE}.d14_conv
 
+  - measure: d30_conv
+    type: sum
+    sql: ${TABLE}.d30_conv
+    
   - measure: d14_retained
     type: sum
     sql: ${TABLE}.d14_retained
+
+  - measure: d30_retained
+    type: sum
+    sql: ${TABLE}.d30_retained    
     
   - measure: d14_retention
     type: number
     sql: ${d14_retained}/${player_count}    
     value_format_name: percent_1
 
+  - measure: d30_retention
+    type: number
+    sql: ${d30_retained}/${player_count}    
+    value_format_name: percent_1
+
   - measure: d14_value
     type: sum
     sql: ${TABLE}.d14_value
+    value_format_name: usd
+
+  - measure: d30_value
+    type: sum
+    sql: ${TABLE}.d30_value
     value_format_name: usd
 
   - measure: d1_app_starts
