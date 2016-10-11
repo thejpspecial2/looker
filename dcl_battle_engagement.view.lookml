@@ -48,7 +48,7 @@
     type: avg
     sql: ${TABLE}.mp_starts_p95
 
-  - measure: network
+  - dimension: network
     type: string
     sql: ${TABLE}.network
 
