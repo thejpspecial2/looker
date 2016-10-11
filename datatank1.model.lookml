@@ -18,6 +18,7 @@
 - explore: dcl_spenders
 - explore: dcl_spenders_output_ua
 - explore: dcl_battle_details
+- explore: dcl_battle_engagement
 - explore: dcl_wallets_by_level
 - explore: kpis
 - explore: td_queue_summary
