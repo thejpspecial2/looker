@@ -10,6 +10,10 @@
   - dimension: country
     type: string
     sql: ${TABLE}.country
+    
+  - dimension: platform
+    type: string
+    sql: ${TABLE}.platform
 
   - measure: d14_installs_offset
     type: sum
