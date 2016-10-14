@@ -7,6 +7,11 @@
     sql: ${TABLE}.avg_player_level
     value_format_name: decimal_1
 
+  - dimension: first_battle
+    type: number
+    sql: ${TABLE}.first_battle
+    value_format_name: decimal_0
+    
   - dimension: avg_player_level_1st_play
     type: number
     sql: ${TABLE}.avg_player_level_1st_play
