@@ -22,6 +22,7 @@
 - explore: dcl_wallets_by_level
 - explore: dcl_pvp_daily
 - explore: dcl_sc_sink_source
+- explore: dcl_hourly_installs
 - explore: kpis
 - explore: td_queue_summary
 #- explore: inj_adjust_purchase_trans
