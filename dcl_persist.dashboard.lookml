@@ -107,7 +107,7 @@
       single_value_title: Android
         
     - name: dcl_ios_hourly_installs
-      title: DCL iOS Hourly Downloads
+      title: DCL iOS Hourly Installs
       type: looker_line
       model: datatank1
       explore: dcl_hourly_installs
@@ -149,7 +149,7 @@
       x_axis_reversed: true
             
     - name: dcl_android_hourly_installs
-      title: DCL Android Hourly Downloads
+      title: DCL Android Hourly Installs
       type: looker_line
       model: datatank1
       explore: dcl_hourly_installs
