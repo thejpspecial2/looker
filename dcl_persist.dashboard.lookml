@@ -1,10 +1,14 @@
 - dashboard: dcl_persist
   title: Dcl Launch Dashboard
   layout: grid
-  rows: 
-    - elements: [dcl_ios_installs, dcl_android_installs, dcl_ios_hourly_installs, dcl_android_hourly_installs, dcl_ios_location_installs, dcl_android_location_installs]
+  rows:
+    - elements: [dcl_ios_installs, dcl_android_installs]
       height: 100
-
+    - elements: [dcl_ios_hourly_installs, dcl_android_hourly_installs] 
+      height: 300
+    - elements: [dcl_ios_location_installs, dcl_android_location_installs]
+      height: 400
+      
   refresh: 1 hours
   auto_run: true
   
