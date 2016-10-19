@@ -10,6 +10,10 @@
   - dimension: country
     type: string
     sql: ${TABLE}.country
+
+  - dimension: country_top20
+    type: string
+    sql: ${TABLE}.country_top20
     
   - dimension: platform
     type: string
