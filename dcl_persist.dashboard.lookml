@@ -13,6 +13,7 @@
       
   refresh: 1 hours
   auto_run: true
+  front_size: large
   
   elements:
     
