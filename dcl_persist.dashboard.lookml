@@ -262,7 +262,7 @@
       dimensions: [dcl_hourly_installs.gameplay_hour]
       measures: [dcl_hourly_installs.player_count, dcl_hourly_installs.install_count]
       filters:
-        dcl_hourly_installs.platform: Android
+        dcl_hourly_installs.platform: iOS
       sorts: [dcl_hourly_installs.gameplay_hour desc]
       limit: '168'
       column_limit: '50'
@@ -280,7 +280,7 @@
       show_y_axis_ticks: true
       y_axis_tick_density: default
       y_axis_tick_density_custom: 5
-      show_x_axis_label: true
+      show_x_axis_label: false
       show_x_axis_ticks: true
       x_axis_scale: auto
       y_axis_scale_mode: linear
@@ -296,7 +296,12 @@
       hide_legend: false
       x_axis_reversed: true
       y_axis_orientation: [left, right]
-      x_axis_label: YYYY-MM-DD HH
+      x_axis_label: ''
+      series_labels:
+        dcl_hourly_installs.player_count: Hourly Players
+        dcl_hourly_installs.install_count: Hourly Installs
+      y_axis_labels: [Hourly Players, Hourly Installs]
+
     
     - name: dcl_android_hourly_actives
       title: DCL Android Hourly Actives
@@ -324,7 +329,7 @@
       show_y_axis_ticks: true
       y_axis_tick_density: default
       y_axis_tick_density_custom: 5
-      show_x_axis_label: true
+      show_x_axis_label: false
       show_x_axis_ticks: true
       x_axis_scale: auto
       y_axis_scale_mode: linear
@@ -340,7 +345,13 @@
       hide_legend: false
       x_axis_reversed: true
       y_axis_orientation: [left, right]
-      x_axis_label: YYYY-MM-DD HH
+      x_axis_label: Hour
+      y_axis_labels: [Hourly Players, Hourly Installs]
+      hidden_series: []
+      series_labels:
+        dcl_hourly_installs.player_count: Hourly Players
+        dcl_hourly_installs.install_count: Hourly Installs
+
 
                   
     - name: dcl_revenue_by_country
