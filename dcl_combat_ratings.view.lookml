@@ -9,7 +9,11 @@
   - dimension: battle_result
     type: string
     sql: ${TABLE}.battle_result
-
+  
+  - dimension: battle_description
+    type: string
+    sql: ${TABLE}.battle_description
+    
   - dimension: combat_rating
     type: number
     sql: ${TABLE}.combat_rating
