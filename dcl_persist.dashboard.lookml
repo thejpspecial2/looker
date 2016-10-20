@@ -6,7 +6,7 @@
       height: 70
     - elements: [dcl_ios_hourly_actives, dcl_android_hourly_actives] 
       height: 280      
-    - elements: [dcl_android_location_installs]
+    - elements: [dcl_downloads_by_country, dcl_revenue_by_country]
       height: 250
       
   refresh: 1 hours
@@ -196,23 +196,43 @@
       totals_color: '#808080'
       series_types: {}
       single_value_title: Android
-          
-    - name: dcl_android_location_installs
-      title: DCL Android Country Downloads
-      type: looker_pie
+      
+    - name: dcl_downloads_by_country
+      title: DCL Downloads By Country
+      type: looker_bar
       model: datatank1
       explore: dcl_kpi
-      dimensions: [dcl_kpi.country]
+      dimensions: [dcl_kpi.platform, dcl_kpi.country_top20]
+      pivots: [dcl_kpi.country_top20]
       measures: [dcl_kpi.downloads]
-      filters:
-        dcl_kpi.platform: google
-      sorts: [dcl_kpi.downloads desc]
-      limit: '10'
+      sorts: [dcl_kpi.downloads desc, dcl_kpi.country_top20]
+      limit: '20'
       column_limit: '50'
       query_timezone: America/Los_Angeles
+      stacking: percent
+      show_value_labels: false
+      label_density: 25
+      legend_position: center
+      x_axis_gridlines: false
+      y_axis_gridlines: true
+      show_view_names: false
+      limit_displayed_rows: false
+      y_axis_combined: true
+      show_y_axis_labels: true
+      show_y_axis_ticks: true
+      y_axis_tick_density: default
+      y_axis_tick_density_custom: 5
+      show_x_axis_label: true
+      show_x_axis_ticks: true
+      x_axis_scale: auto
+      y_axis_scale_mode: linear
+      ordering: desc
+      show_null_labels: false
+      show_totals_labels: false
+      show_silhouette: false
+      totals_color: '#808080'
       value_labels: legend
       label_type: labPer
-      show_view_names: true
       map_plot_mode: points
       heatmap_gridlines: false
       heatmap_opacity: 0.5
@@ -231,28 +251,8 @@
       map_marker_color_mode: fixed
       show_legend: true
       quantize_map_value_colors: false
-      stacking: ''
-      show_value_labels: false
-      label_density: 25
-      legend_position: center
-      x_axis_gridlines: false
-      y_axis_gridlines: true
-      limit_displayed_rows: false
-      y_axis_combined: true
-      show_y_axis_labels: true
-      show_y_axis_ticks: true
-      y_axis_tick_density: default
-      y_axis_tick_density_custom: 5
-      show_x_axis_label: true
-      show_x_axis_ticks: true
-      x_axis_scale: auto
-      y_axis_scale_mode: linear
-      ordering: none
-      show_null_labels: false
-      show_totals_labels: false
-      show_silhouette: false
-      totals_color: '#808080'
       series_types: {}
+      hide_legend: false
       
     - name: dcl_ios_hourly_actives
       title: DCL iOS Hourly Actives
@@ -337,4 +337,61 @@
       series_types: {}
       hide_legend: false
       x_axis_reversed: true
-              
+                  
+    - name: dcl_revenue_by_country
+      title: DCL Revenue By Country
+      type: looker_bar
+      model: datatank1
+      explore: dcl_kpi
+      dimensions: [dcl_kpi.platform, dcl_kpi.country_top20]
+      pivots: [dcl_kpi.country_top20]
+      measures: [dcl_kpi.revenue_apple]
+      sorts: [dcl_kpi.country_top20, dcl_kpi.revenue_apple desc]
+      limit: '20'
+      column_limit: '50'
+      query_timezone: America/Los_Angeles
+      stacking: percent
+      show_value_labels: false
+      label_density: 25
+      legend_position: center
+      x_axis_gridlines: false
+      y_axis_gridlines: true
+      show_view_names: false
+      limit_displayed_rows: false
+      y_axis_combined: true
+      show_y_axis_labels: true
+      show_y_axis_ticks: true
+      y_axis_tick_density: default
+      y_axis_tick_density_custom: 5
+      show_x_axis_label: true
+      show_x_axis_ticks: true
+      x_axis_scale: auto
+      y_axis_scale_mode: linear
+      ordering: desc
+      show_null_labels: false
+      show_totals_labels: false
+      show_silhouette: false
+      totals_color: '#808080'
+      value_labels: legend
+      label_type: labPer
+      map_plot_mode: points
+      heatmap_gridlines: false
+      heatmap_opacity: 0.5
+      show_region_field: true
+      draw_map_labels_above_data: true
+      map_tile_provider: positron
+      map_position: fit_data
+      map_scale_indicator: 'off'
+      map_pannable: true
+      map_zoomable: true
+      map_marker_type: circle
+      map_marker_icon_name: default
+      map_marker_radius_mode: proportional_value
+      map_marker_units: meters
+      map_marker_proportional_scale_type: linear
+      map_marker_color_mode: fixed
+      show_legend: true
+      quantize_map_value_colors: false
+      series_types: {}
+      hide_legend: false
+

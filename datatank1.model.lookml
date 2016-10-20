@@ -23,6 +23,7 @@
 - explore: dcl_pvp_daily
 - explore: dcl_sc_sink_source
 - explore: dcl_hourly_installs
+- explore: dcl_combat_ratings
 - explore: kpis
 - explore: td_queue_summary
 #- explore: inj_adjust_purchase_trans
