@@ -253,6 +253,7 @@
       quantize_map_value_colors: false
       series_types: {}
       hide_legend: false
+      y_axis_labels: ['% LTD PoS Downloads']
       
     - name: dcl_ios_hourly_actives
       title: DCL iOS Hourly Actives
