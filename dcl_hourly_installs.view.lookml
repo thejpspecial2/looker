@@ -16,11 +16,11 @@
 
   - measure: install_count
     type: sum
-    sql: substring(${TABLE}.install_count, 6, 8)
+    sql: ${TABLE}.install_count
 
   - dimension: gameplay_hour
     type: string
-    sql: ${TABLE}.real_ts
+    sql: SUBSTRING(${TABLE}.real_ts, 6, 8)
 
   - measure: count
     type: count
