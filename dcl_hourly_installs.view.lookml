@@ -16,7 +16,7 @@
 
   - measure: install_count
     type: sum
-    sql: ${TABLE}.install_count
+    sql: substring(${TABLE}.install_count, 6, 8)
 
   - dimension: gameplay_hour
     type: string
