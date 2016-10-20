@@ -29,6 +29,7 @@
   - measure: powerscore_avg
     type: avg
     sql: ${TABLE}.powerscore_avg
+    value_format_name: decimal_0
 
   - measure: powerscore_p25
     type: avg
