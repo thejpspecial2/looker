@@ -150,7 +150,7 @@
       show_silhouette: false
       totals_color: '#808080'
       series_types: {}
-      single_value_title: iOS
+      single_value_title: iOS LTD Downloads
       
     - name: dcl_android_installs
       title: DCL Total Android Downloads
@@ -195,7 +195,7 @@
       show_silhouette: false
       totals_color: '#808080'
       series_types: {}
-      single_value_title: Android
+      single_value_title: Android LTD Downloads
       
     - name: dcl_downloads_by_country
       title: DCL Downloads By Country
