@@ -351,8 +351,6 @@
       series_labels:
         dcl_hourly_installs.player_count: Hourly Players
         dcl_hourly_installs.install_count: Hourly Installs
-
-
                   
     - name: dcl_revenue_by_country
       title: DCL Revenue By Country
@@ -379,7 +377,7 @@
       show_y_axis_ticks: true
       y_axis_tick_density: default
       y_axis_tick_density_custom: 5
-      show_x_axis_label: true
+      show_x_axis_label: false
       show_x_axis_ticks: true
       x_axis_scale: auto
       y_axis_scale_mode: linear
@@ -410,4 +408,5 @@
       quantize_map_value_colors: false
       series_types: {}
       hide_legend: false
-
+      x_axis_label: ''
+      y_axis_labels: ['% LTD PoS Revenue']
