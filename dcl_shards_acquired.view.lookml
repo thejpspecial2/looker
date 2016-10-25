@@ -6,9 +6,13 @@
     type: string
     sql: ${TABLE}.character_name
 
-  - measure: cume_shards_acquired
+  - measure: cume_shards_by_days_since_install
     type: sum
-    sql: ${TABLE}.cume_shards_acquired
+    sql: ${TABLE}.cume_shards_by_days_since_install
+
+  - measure: cume_shards_by_player_level
+    type: sum
+    sql: ${TABLE}.cume_shards_by_player_level
 
   - dimension: days_since_install
     type: number
