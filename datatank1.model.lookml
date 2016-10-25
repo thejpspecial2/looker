@@ -24,6 +24,7 @@
 - explore: dcl_sc_sink_source
 - explore: dcl_hourly_installs
 - explore: dcl_combat_ratings
+- explore: dcl_shards_acquired
 - explore: kpis
 - explore: td_queue_summary
 #- explore: inj_adjust_purchase_trans
