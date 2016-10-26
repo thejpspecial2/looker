@@ -2,12 +2,12 @@
   sql_table_name: public.dcl_item_acquisition
   fields:
 
-  - dimension: avg_amt_acquired_if_applicable
-    type: number
+  - measure: avg_amt_acquired_if_applicable
+    type: avg
     sql: ${TABLE}.avg_amt_acquired_if_applicable
 
-  - dimension: avg_times_player_triggered_event
-    type: number
+  - measure: avg_times_player_triggered_event
+    type: avg
     sql: ${TABLE}.avg_times_player_triggered_event
 
   - dimension: event_name
