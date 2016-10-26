@@ -5,11 +5,13 @@
   - measure: avg_amt_acquired_if_applicable
     type: avg
     sql: ${TABLE}.avg_amt_acquired_if_applicable
+    value_format_name: decimal_1
 
   - measure: avg_times_player_triggered_event
     type: avg
     sql: ${TABLE}.avg_times_player_triggered_event
-
+    value_format_name: decimal_1
+  
   - dimension: event_name
     type: string
     sql: ${TABLE}.event_name
