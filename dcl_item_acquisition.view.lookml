@@ -11,6 +11,16 @@
     type: avg
     sql: ${TABLE}.avg_times_player_triggered_event
     value_format_name: decimal_1
+
+  - measure: sum_amt_acquired_if_applicable
+    type: sum
+    sql: ${TABLE}.avg_amt_acquired_if_applicable
+    value_format_name: decimal_1
+
+  - measure: sum_times_player_triggered_event
+    type: sum
+    sql: ${TABLE}.avg_times_player_triggered_event
+    value_format_name: decimal_1  
   
   - dimension: event_name
     type: string
