@@ -261,6 +261,10 @@
     type: string
     sql: ${TABLE}.install_date
 
+  - dimension: platform
+    type: string
+    sql: ${TABLE}.platform
+
   - dimension: network
     type: string
     sql: ${TABLE}.network
