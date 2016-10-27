@@ -33,6 +33,7 @@
 - explore: ess_adjust_events
 - explore: ess_ios_daily_kpi
 - explore: ess_ios_dash
+- explore: mkx_ftue_funnel
 
 - explore: inj_adjust_purchase_trans
   joins:
