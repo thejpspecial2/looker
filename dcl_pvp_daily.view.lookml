@@ -42,6 +42,56 @@
     type: sum
     sql: ${TABLE}.proto_swampthing_b
 
+
+  - measure: proto_batman_c_shards
+    type: sum
+    sql: ${TABLE}.proto_batman_c_shards
+
+  - measure: proto_deathstroke_b_shards
+    type: sum
+    sql: ${TABLE}.proto_deathstroke_b_shards
+
+  - measure: proto_doomsday_b_shards
+    type: sum
+    sql: ${TABLE}.proto_doomsday_b_shards
+
+  - measure: proto_greenarrowisland_s_shards
+    type: sum
+    sql: ${TABLE}.proto_greenarrowisland_s_shards
+
+  - measure: proto_lexluthor_b_shards
+    type: sum
+    sql: ${TABLE}.proto_lexluthor_b_shards
+
+  - measure: proto_swampthing_b_shards
+    type: sum
+    sql: ${TABLE}.proto_swampthing_b_shards
+
+
+  - measure: proto_batman_c_shards_unique
+    type: sum
+    sql: ${TABLE}.proto_batman_c_shards_unique
+
+  - measure: proto_deathstroke_b_shards_unique
+    type: sum
+    sql: ${TABLE}.proto_deathstroke_b_shards_unique
+
+  - measure: proto_doomsday_b_shards_unique
+    type: sum
+    sql: ${TABLE}.proto_doomsday_b_shards_unique
+
+  - measure: proto_greenarrowisland_s_shards_unique
+    type: sum
+    sql: ${TABLE}.proto_greenarrowisland_s_shards_unique
+
+  - measure: proto_lexluthor_b_shards_unique
+    type: sum
+    sql: ${TABLE}.proto_lexluthor_b_shards_unique
+
+  - measure: proto_swampthing_b_shards_unique
+    type: sum
+    sql: ${TABLE}.proto_swampthing_b_shards_unique  
+
   - measure: pvp_failures
     type: sum
     sql: ${TABLE}.pvp_failures
