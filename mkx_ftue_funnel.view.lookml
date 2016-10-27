@@ -18,68 +18,68 @@
     type: sum
     sql: ${TABLE}.player_count
 
-  - measure: tutorial_00_ladderscreen_yourteam
-    type: sum
+  - dimension: tutorial_00_ladderscreen_yourteam
+    type: number
     sql: ${TABLE}.tutorial_00_ladderscreen_yourteam
 
-  - measure: tutorial_01_ladderscreen_opposingteam
-    type: sum
+  - dimension: tutorial_01_ladderscreen_opposingteam
+    type: number
     sql: ${TABLE}.tutorial_01_ladderscreen_opposingteam
 
-  - measure: tutorial_02_ladderscreen_energy
-    type: sum
+  - dimension: tutorial_02_ladderscreen_energy
+    type: number
     sql: ${TABLE}.tutorial_02_ladderscreen_energy
 
-  - measure: tutorial_03_ladderscreen_fightbtn
-    type: sum
+  - dimension: tutorial_03_ladderscreen_fightbtn
+    type: number
     sql: ${TABLE}.tutorial_03_ladderscreen_fightbtn
 
-  - measure: tutorial_04_ladderscreen_flipcard
-    type: sum
+  - dimension: tutorial_04_ladderscreen_flipcard
+    type: number
     sql: ${TABLE}.tutorial_04_ladderscreen_flipcard
 
-  - measure: tutorial_05_upgradescreen_tapspecial
-    type: sum
+  - dimension: tutorial_05_upgradescreen_tapspecial
+    type: number
     sql: ${TABLE}.tutorial_05_upgradescreen_tapspecial
 
-  - measure: tutorial_06_specialpopup_tapuseupgrade
-    type: sum
+  - dimension: tutorial_06_specialpopup_tapuseupgrade
+    type: number
     sql: ${TABLE}.tutorial_06_specialpopup_tapuseupgrade
 
-  - measure: tutorial_07_ladderscreen_jumpintofightafterupgrade
-    type: sum
+  - dimension: tutorial_07_ladderscreen_jumpintofightafterupgrade
+    type: number
     sql: ${TABLE}.tutorial_07_ladderscreen_jumpintofightafterupgrade
 
-  - measure: tutorial_08_matchresults_engergyreplenish
-    type: sum
+  - dimension: tutorial_08_matchresults_engergyreplenish
+    type: number
     sql: ${TABLE}.tutorial_08_matchresults_engergyreplenish
 
-  - measure: tutorial_09_matchresults_rewardsgained
-    type: sum
+  - dimension: tutorial_09_matchresults_rewardsgained
+    type: number
     sql: ${TABLE}.tutorial_09_matchresults_rewardsgained
 
-  - measure: tutorial_10_battlemodemenu_tapstore
-    type: sum
+  - dimension: tutorial_10_battlemodemenu_tapstore
+    type: number
     sql: ${TABLE}.tutorial_10_battlemodemenu_tapstore
 
-  - measure: tutorial_11_storemenu_buybooster
-    type: sum
+  - dimension: tutorial_11_storemenu_buybooster
+    type: number
     sql: ${TABLE}.tutorial_11_storemenu_buybooster
 
-  - measure: tutorial_12_storemenu_takeuserbacktobattlemodemenu
-    type: sum
+  - dimension: tutorial_12_storemenu_takeuserbacktobattlemodemenu
+    type: number
     sql: ${TABLE}.tutorial_12_storemenu_takeuserbacktobattlemodemenu
 
-  - measure: tutorial_13_battlemodemenu_tutorialcomplete
-    type: sum
+  - dimension: tutorial_13_battlemodemenu_tutorialcomplete
+    type: number
     sql: ${TABLE}.tutorial_13_battlemodemenu_tutorialcomplete
 
-  - measure: tutorial_complete
-    type: sum
+  - dimension: tutorial_complete
+    type: number
     sql: ${TABLE}.tutorial_complete
 
-  - measure: tutorial_started
-    type: sum
+  - dimension: tutorial_started
+    type: number
     sql: ${TABLE}.tutorial_started
 
   - measure: count
