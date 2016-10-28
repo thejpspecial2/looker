@@ -14,8 +14,8 @@
     type: string
     sql: ${TABLE}.platform
 
-  - measure: player_count
-    type: sum
+  - dimension: player_count
+    type: number
     sql: ${TABLE}.player_count
 
   - dimension: tutorial_00_ladderscreen_yourteam
@@ -74,13 +74,13 @@
     type: number
     sql: ${TABLE}.tutorial_13_battlemodemenu_tutorialcomplete
 
-  - dimension: tutorial_complete
-    type: number
-    sql: ${TABLE}.tutorial_complete
-
   - dimension: tutorial_started
     type: number
     sql: ${TABLE}.tutorial_started
+
+  - dimension: user_id
+    type: string
+    sql: ${TABLE}.user_id
 
   - measure: count
     type: count
