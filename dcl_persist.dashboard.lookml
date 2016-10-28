@@ -20,7 +20,7 @@
       model: datatank1
       explore: dcl_kpi
       dimensions: [dcl_kpi.platform]
-      measures: [dcl_kpi.revenue_apple]
+      measures: [dcl_kpi.revenue_pos]
       filters:
         dcl_kpi.platform: google
       sorts: [dcl_kpi.platform]
@@ -67,7 +67,7 @@
       model: datatank1
       explore: dcl_kpi
       dimensions: [dcl_kpi.platform]
-      measures: [dcl_kpi.revenue_apple]
+      measures: [dcl_kpi.revenue_pos]
       filters:
         dcl_kpi.platform: apple
       sorts: [dcl_kpi.platform]
@@ -360,8 +360,8 @@
       explore: dcl_kpi
       dimensions: [dcl_kpi.platform, dcl_kpi.country_top20]
       pivots: [dcl_kpi.country_top20]
-      measures: [dcl_kpi.revenue_apple]
-      sorts: [dcl_kpi.country_top20, dcl_kpi.revenue_apple desc]
+      measures: [dcl_kpi.revenue_pos]
+      sorts: [dcl_kpi.country_top20, dcl_kpi.revenue_pos desc]
       limit: '20'
       column_limit: '50'
       query_timezone: America/Los_Angeles

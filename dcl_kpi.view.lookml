@@ -171,19 +171,19 @@
     sql: ${TABLE}.revenue_adjust
     value_format_name: usd
 
-  - measure: revenue_apple
+  - measure: revenue_pos
     type: sum
     sql: ${TABLE}.revenue_apple
     value_format_name: usd
   
-  - measure: arpdau_apple
+  - measure: arpdau_pos
     type: number
-    sql: ${revenue_apple}/NULLIF(${dau}, 0)
+    sql: ${revenue_pos}/NULLIF(${dau}, 0)
     value_format_name: usd
 
-  - measure: arppu_apple
+  - measure: arppu_pos
     type: number
-    sql: ${revenue_apple}/NULLIF(${purchasers}, 0)
+    sql: ${revenue_pos}/NULLIF(${purchasers}, 0)
     value_format_name: usd
     
   - measure: sessions
