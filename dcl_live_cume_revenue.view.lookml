@@ -9,6 +9,7 @@
   - measure: cume_revenue
     type: sum
     sql: ${TABLE}.cume_revenue
+    value_format_name: usd_0
 
   - dimension: hh_mm
     type: string
