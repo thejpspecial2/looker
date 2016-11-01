@@ -14,6 +14,10 @@
     type: string
     sql: ${TABLE}.hh_mm
 
+  - dimension: platform
+    type: string
+    sql: ${TABLE}.platform   
+
   - dimension: yyyy_mm_dd
     type: string
     sql: ${TABLE}.yyyy_mm_dd
