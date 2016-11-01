@@ -1,5 +1,5 @@
 - dashboard: dcl_live
-  title: Dcl Launch Dashboard
+  title: Dcl Live Dashboard
   layout: grid
   rows:
     - elements: [dcl_ios_revenue_live, dcl_android_revenue_live] 
@@ -7,7 +7,7 @@
     - elements: [dcl_ios_dau_live, dcl_android_dau_live]
       height: 400
       
-  refresh: 1 hours
+  refresh: 5 minutes
   auto_run: true
   front_size: large
 
