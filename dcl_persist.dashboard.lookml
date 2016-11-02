@@ -3,11 +3,11 @@
   layout: grid
   rows:
     - elements: [dcl_ios_installs, dcl_ios_revenue, dcl_android_installs, dcl_android_revenue]
-      height: 140
+      height: 160
     - elements: [dcl_ios_installs_live, dcl_android_installs_live] 
-      height: 280      
+      height: 350      
     - elements: [dcl_ios_revenue_live, dcl_android_revenue_live]
-      height: 280
+      height: 350
       
   refresh: 5 minutes
   auto_run: true
