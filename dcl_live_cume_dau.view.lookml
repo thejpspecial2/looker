@@ -6,6 +6,10 @@
     type: sum
     sql: ${TABLE}.cume_dau
 
+  - measure: cume_installs
+    type: sum
+    sql: ${TABLE}.cume_installs
+    
   - dimension: hh_mm
     type: string
     sql: ${TABLE}.hh_mm
