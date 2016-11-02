@@ -36,6 +36,7 @@
 - explore: ess_ios_daily_kpi
 - explore: ess_ios_dash
 - explore: mkx_ftue_funnel
+- explore: yuki_test
 
 - explore: inj_adjust_purchase_trans
   joins:
