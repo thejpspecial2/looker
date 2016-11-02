@@ -1,5 +1,5 @@
 - view: yuki_test
-  sql_table_name: public.Yuki_test
+  sql_table_name: public.yuki_test
   fields:
 
   - dimension: install_date
