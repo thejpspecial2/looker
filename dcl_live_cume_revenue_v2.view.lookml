@@ -18,6 +18,14 @@
     type: max
     sql: ${TABLE}.cume_revenue
 
+  - measure: cume_bundle_purchases
+    type: sum
+    sql: ${TABLE}.cume_bundle_purchases
+
+  - measure: cume_bundle_purchases_max
+    type: max
+    sql: ${TABLE}.cume_bundle_purchases
+
   - dimension: hh_mm
     type: string
     sql: ${TABLE}.hh_mm
