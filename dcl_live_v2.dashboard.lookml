@@ -284,7 +284,7 @@
       filters:
         dcl_live_cume_dau_v2.platform: Android
         dcl_live_cume_dau_v2.type: country
-      sorts: [dcl_live_cume_dau_v2.cume_dau_max desc 2, dcl_live_cume_dau_v2.yyyy_mm_dd,
+      sorts: [dcl_live_cume_dau_v2.yyyy_mm_dd, dcl_live_cume_dau_v2.cume_dau_max desc 2, 
         dcl_live_cume_dau_v2.hh_mm]
       limit: '500'
       column_limit: '50'
@@ -326,7 +326,7 @@
       filters:
         dcl_live_cume_dau_v2.platform: Android
         dcl_live_cume_dau_v2.type: country
-      sorts: [dcl_live_cume_dau_v2.yyyy_mm_dd, dcl_live_cume_dau_v2.hh_mm]
+      sorts: [dcl_live_cume_dau_v2.yyyy_mm_dd, dcl_live_cume_dau_v2.cume_installs_max desc 2, dcl_live_cume_dau_v2.hh_mm]
       limit: '500'
       column_limit: '50'
       query_timezone: America/Los_Angeles
@@ -367,7 +367,7 @@
       filters:
         dcl_live_cume_revenue_v2.platform: Android
         dcl_live_cume_revenue_v2.type: country
-      sorts: [dcl_live_cume_revenue_v2.cume_revenue_max desc, dcl_live_cume_revenue_v2.yyyy_mm_dd,
+      sorts: [dcl_live_cume_revenue_v2.yyyy_mm_dd, dcl_live_cume_revenue_v2.cume_revenue_max desc, 
         dcl_live_cume_revenue_v2.hh_mm]
       limit: '500'
       column_limit: '50'
@@ -413,7 +413,7 @@
       filters:
         dcl_live_cume_revenue_v2.platform: iOS
         dcl_live_cume_revenue_v2.type: country
-      sorts: [dcl_live_cume_revenue_v2.cume_revenue_max desc, dcl_live_cume_revenue_v2.yyyy_mm_dd,
+      sorts: [dcl_live_cume_revenue_v2.yyyy_mm_dd, dcl_live_cume_revenue_v2.cume_revenue_max desc, 
         dcl_live_cume_revenue_v2.hh_mm]
       limit: '500'
       column_limit: '50'
@@ -500,7 +500,7 @@
       filters:
         dcl_live_cume_revenue_v2.platform: iOS
         dcl_live_cume_revenue_v2.type: country
-      sorts: [dcl_live_cume_revenue_v2.cume_revenue_max desc, dcl_live_cume_revenue_v2.yyyy_mm_dd,
+      sorts: [dcl_live_cume_revenue_v2.yyyy_mm_dd, dcl_live_cume_revenue_v2.cume_revenue_max desc, 
         dcl_live_cume_revenue_v2.hh_mm]
       limit: '500'
       column_limit: '50'
