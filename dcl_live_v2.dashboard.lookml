@@ -9,7 +9,7 @@
     - elements: [dcl_ios_installs_cume, dcl_ios_installs_country, dcl_android_installs_cume, dcl_android_installs_country] 
       height: 300
       
-  refresh: 5 hours
+  refresh: 5 minutes
   auto_run: true
   front_size: large
 
