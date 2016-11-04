@@ -9,6 +9,7 @@
   - measure: cume_revenue
     type: sum
     sql: ${TABLE}.cume_revenue
+    value_format_name: usd
 
   - measure: cume_purchases_max
     type: max
@@ -17,6 +18,7 @@
   - measure: cume_revenue_max
     type: max
     sql: ${TABLE}.cume_revenue
+    value_format_name: usd
 
   - measure: cume_bundle_purchases
     type: sum
