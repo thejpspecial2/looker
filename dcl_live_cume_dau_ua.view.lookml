@@ -36,7 +36,7 @@
 
   - dimension: days_ago
     type: number
-    sql: datediff('day', to_date(${TABLE}.yyyy_mm_dd, 'yyyy-MM-dd'), to_date(${TABLE}.recent_date, 'yyyy-MM-dd'))
+    sql: to_date(${TABLE}.recent_date, 'yyyy-MM-dd') - to_date(${TABLE}.yyyy_mm_dd, 'yyyy-MM-dd')
 
   - measure: count
     type: count
