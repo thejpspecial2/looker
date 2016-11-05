@@ -3,13 +3,13 @@
   layout: grid
   rows:
     - elements: [zero_days_ago]
-      height: 300      
+      height: 600      
     - elements: [one_days_ago]
-      height: 300
+      height: 600
     - elements: [two_days_ago]
-      height: 300
+      height: 600
     - elements: [three_days_ago]
-      height: 300      
+      height: 600      
 
   refresh: 60 minutes
   auto_run: true
