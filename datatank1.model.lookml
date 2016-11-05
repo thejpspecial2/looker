@@ -31,6 +31,7 @@
 - explore: dcl_live_cume_revenue
 - explore: dcl_live_cume_dau_v2
 - explore: dcl_live_cume_revenue_v2
+- explore: dcl_live_cume_dau_ua
 #- explore: inj_adjust_purchase_trans
 - explore: inj_adjust_items_trans
 - explore: inj_adjust_mp_chall_starts
