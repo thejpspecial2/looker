@@ -62,6 +62,7 @@
       hidden_series: []
       colors: ['#62bad4', '#0041C2', '#4CC417', '#5EFB6E', '#FFD801', '#FBB917', '#E55451',
         '#E42217', '#82c2ca', '#cee0a0', '#928fb4', '#9fc190']
+      y_axis_orientation: [right, left]
     
     - name: one_days_ago
       title: One Days Ago
@@ -107,6 +108,7 @@
       hidden_series: []
       colors: ['#62bad4', '#0041C2', '#4CC417', '#5EFB6E', '#FFD801', '#FBB917', '#E55451',
         '#E42217', '#82c2ca', '#cee0a0', '#928fb4', '#9fc190']
+      y_axis_orientation: [right, left]
     
     - name: two_days_ago
       title: Two Days Ago
@@ -152,6 +154,7 @@
       hidden_series: []
       colors: ['#62bad4', '#0041C2', '#4CC417', '#5EFB6E', '#FFD801', '#FBB917', '#E55451',
         '#E42217', '#82c2ca', '#cee0a0', '#928fb4', '#9fc190']
+      y_axis_orientation: [right, left]
     
     - name: three_days_ago
       title: Three Days Ago
@@ -197,4 +200,5 @@
       hidden_series: []
       colors: ['#62bad4', '#0041C2', '#4CC417', '#5EFB6E', '#FFD801', '#FBB917', '#E55451',
         '#E42217', '#82c2ca', '#cee0a0', '#928fb4', '#9fc190']
+      y_axis_orientation: [right, left]  
     
