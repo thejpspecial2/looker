@@ -30,6 +30,15 @@
     type: string
     sql: ${TABLE}.yyyy_mm_dd
 
+  - dimension: recent_date
+    type: string
+    sql: ${TABLE}.recent_date
+
+  - dimension: days_ago
+    type: number
+    sql: datediff('day', ${TABLE}.yyyy_mm_dd, ${TABLE}.recent_date)
+
+
   - measure: count
     type: count
     drill_fields: []
