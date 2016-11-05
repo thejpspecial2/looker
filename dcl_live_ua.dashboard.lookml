@@ -40,7 +40,7 @@
       y_axis_gridlines: true
       show_view_names: false
       limit_displayed_rows: false
-      y_axis_combined: true
+      y_axis_combined: false
       show_y_axis_labels: true
       show_y_axis_ticks: true
       y_axis_tick_density: default
@@ -86,7 +86,7 @@
       y_axis_gridlines: true
       show_view_names: false
       limit_displayed_rows: false
-      y_axis_combined: true
+      y_axis_combined: false
       show_y_axis_labels: true
       show_y_axis_ticks: true
       y_axis_tick_density: default
@@ -132,7 +132,7 @@
       y_axis_gridlines: true
       show_view_names: false
       limit_displayed_rows: false
-      y_axis_combined: true
+      y_axis_combined: false
       show_y_axis_labels: true
       show_y_axis_ticks: true
       y_axis_tick_density: default
@@ -178,7 +178,7 @@
       y_axis_gridlines: true
       show_view_names: false
       limit_displayed_rows: false
-      y_axis_combined: true
+      y_axis_combined: false
       show_y_axis_labels: true
       show_y_axis_ticks: true
       y_axis_tick_density: default
@@ -200,5 +200,5 @@
       hidden_series: []
       colors: ['#62bad4', '#0041C2', '#4CC417', '#5EFB6E', '#FFD801', '#FBB917', '#E55451',
         '#E42217', '#82c2ca', '#cee0a0', '#928fb4', '#9fc190']
-      y_axis_orientation: [right, left]  
+      y_axis_orientation: [right, left]
     
