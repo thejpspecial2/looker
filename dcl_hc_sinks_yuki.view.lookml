@@ -6,16 +6,16 @@
     type: string
     sql: ${TABLE}.date
 
-  - dimension: item1_hc
-    type: number
+  - measure: item1_hc
+    type: sum
     sql: ${TABLE}.item1_hc
 
-  - dimension: item2_hc
-    type: number
+  - measure: item2_hc
+    type: sum
     sql: ${TABLE}.item2_hc
 
-  - dimension: item3_hc
-    type: number
+  - measure: item3_hc
+    type: sum
     sql: ${TABLE}.item3_hc
 
   - dimension: lead1_purchase
@@ -38,8 +38,8 @@
     type: string
     sql: ${TABLE}.platform
 
-  - dimension: transaction_count
-    type: number
+  - measure: transaction_count
+    type: sum
     sql: ${TABLE}.transaction_count
     
   - dimension_group: measure
