@@ -41,10 +41,10 @@
   - dimension: transaction_count
     type: number
     sql: ${TABLE}.transaction_count
-
-
+    
   - dimension_group: measure
     type: time
+    datatype: yyyymmdd
     timeframes: [date]
     sql: ${TABLE}.date
 
