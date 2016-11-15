@@ -14,6 +14,11 @@
     type: sum
     sql: ${TABLE}.cume_purchasers
     
+  - measure: cume_pct_purchasers
+    type: sum
+    sql: ${TABLE}.cume_pct_purchasers
+    value_format_name: percent_2
+    
   - dimension: hh_mm
     type: string
     sql: ${TABLE}.hh_mm
