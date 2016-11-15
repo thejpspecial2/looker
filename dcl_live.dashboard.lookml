@@ -3,13 +3,13 @@
   layout: grid
   rows:
     - elements: [dcl_ios_revenue_live, dcl_android_revenue_live] 
-      height: 250      
+      height: 300      
     - elements: [dcl_ios_dau_live, dcl_android_dau_live]
-      height: 250
+      height: 300
     - elements: [dcl_ios_installs_live, dcl_android_installs_live]
-      height: 250
+      height: 300
     - elements: [dcl_ios_payers_live, dcl_android_payers_live]
-      height: 250
+      height: 300
         
     
       
