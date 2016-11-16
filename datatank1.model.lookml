@@ -41,6 +41,8 @@
 - explore: mkx_ftue_funnel
 - explore: yuki_test
 - explore: dcl_hc_sinks_yuki
+- explore: fb_live_cume_dau
+- explore: fb_live_cume_revenue
 
 
 - explore: inj_adjust_purchase_trans
