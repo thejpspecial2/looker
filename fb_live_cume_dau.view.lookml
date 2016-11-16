@@ -2,20 +2,21 @@
   sql_table_name: public.fb_live_cume_dau
   fields:
 
-  - dimension: cume_dau
-    type: number
+  - measure: cume_dau
+    type: sum
     sql: ${TABLE}.cume_dau
 
-  - dimension: cume_installs
-    type: number
+  - measure: cume_installs
+    type: sum
     sql: ${TABLE}.cume_installs
 
-  - dimension: cume_pct_purchasers
-    type: number
+  - measure: cume_pct_purchasers
+    type: sum
     sql: ${TABLE}.cume_pct_purchasers
+    value_format_name: percent_2
 
-  - dimension: cume_purchasers
-    type: number
+  - measure: cume_purchasers
+    type: sum
     sql: ${TABLE}.cume_purchasers
 
   - dimension: hh_mm
