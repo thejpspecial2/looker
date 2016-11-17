@@ -43,6 +43,8 @@
 - explore: dcl_hc_sinks_yuki
 - explore: fb_live_cume_dau
 - explore: fb_live_cume_revenue
+- explore: fb_live_cume_revenue_ios_daily
+- explore: fb_live_cume_revenue_ios_15
 
 
 - explore: inj_adjust_purchase_trans
