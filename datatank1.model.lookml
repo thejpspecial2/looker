@@ -53,6 +53,7 @@
       select total_value
       from ${fb_live_cume_revenue_ios_15}
 - explore: fb_live_cume_revenue_ios_15
+- explore: fb_ios_live_rev
 
 
 - explore: inj_adjust_purchase_trans
