@@ -44,6 +44,14 @@
 - explore: fb_live_cume_dau
 - explore: fb_live_cume_revenue
 - explore: fb_live_cume_revenue_ios_daily
+- view: fb_ios_live_rev
+  derived_table: 
+    sql: |
+      select total_value
+      from ${fb_live_cume_revenue_ios_daily}
+      union all
+      select total_value
+      from ${fb_live_cume_revenue_ios_15}
 - explore: fb_live_cume_revenue_ios_15
 
 
