@@ -75,6 +75,7 @@
     value_format_name: usd
 - explore: fb_live_cume_revenue_android_15
 - explore: fb_android_live_rev
+- explore: fb_live_cume_installs_android
 
 - explore: inj_adjust_purchase_trans
   joins:
