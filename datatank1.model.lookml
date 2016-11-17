@@ -56,6 +56,7 @@
   - measure: total_value
    # sql: ${TABLE}.field_1 + ${TABLE}.field_2
     type: sum
+    value_format_name: usd
 - explore: fb_live_cume_revenue_ios_15
 - explore: fb_ios_live_rev
 
