@@ -173,7 +173,7 @@
     value_format_name: decimal_0
 
   - measure: hc_avg
-    type: sum
+    type: avg
     sql: ${TABLE}.hc_avg
     value_format_name: decimal_0
 
