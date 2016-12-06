@@ -6,6 +6,12 @@
     type: string
     sql: ${TABLE}.date
 
+  - dimension_group: measure
+    type: time
+    datatype: yyyymmdd
+    timeframes: [date]
+    sql: ${TABLE}.date
+
   - dimension: league
     type: string
     sql: ${TABLE}.league
