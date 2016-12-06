@@ -10,7 +10,7 @@
     type: time
     datatype: date
     timeframes: [date]
-    sql: ${TABLE}.date
+    sql: to_date(${TABLE}.date, 'yyyy-MM-dd')
 
   - dimension: league
     type: string
