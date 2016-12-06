@@ -8,7 +8,7 @@
 
   - dimension_group: measure
     type: time
-    datatype: yyyymmdd
+    datatype: date
     timeframes: [date]
     sql: ${TABLE}.date
 
