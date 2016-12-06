@@ -6,7 +6,7 @@
     type: string
     sql: ${TABLE}.date
 
-  - dimension_group: measure
+  - dimension_group: dates_date
     type: time
     datatype: date
     timeframes: [date]
