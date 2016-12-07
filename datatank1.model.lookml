@@ -41,7 +41,42 @@
 - explore: mkx_ftue_funnel
 - explore: yuki_test
 - explore: dcl_hc_sinks_yuki
-
+- explore: fb_live_cume_dau
+- explore: fb_live_cume_revenue
+- explore: fb_live_cume_revenue_ios_daily
+- view: fb_ios_live_rev
+  derived_table: 
+    sql: |
+      select total_value
+      from ${fb_live_cume_revenue_ios_daily}
+      union all
+      select total_value
+      from ${fb_live_cume_revenue_ios_15}
+  fields:
+  - measure: total_value
+   # sql: ${TABLE}.field_1 + ${TABLE}.field_2
+    type: sum
+    value_format_name: usd
+- explore: fb_live_cume_revenue_ios_15
+- explore: fb_ios_live_rev
+- explore: fb_live_cume_revenue_android_daily
+- view: fb_android_live_rev
+  derived_table: 
+    sql: |
+      select total_value
+      from ${fb_live_cume_revenue_android_daily}
+      union all
+      select total_value
+      from ${fb_live_cume_revenue_android_15}
+  fields:
+  - measure: total_value
+   # sql: ${TABLE}.field_1 + ${TABLE}.field_2
+    type: sum
+    value_format_name: usd
+- explore: fb_live_cume_revenue_android_15
+- explore: fb_android_live_rev
+- explore: fb_live_cume_installs_android
+- explore: fb_live_cume_installs_ios
 
 - explore: inj_adjust_purchase_trans
   joins:
