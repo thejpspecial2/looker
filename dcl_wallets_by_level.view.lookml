@@ -630,11 +630,11 @@
     type: count
     drill_fields: []
     
-  - dimension_group: measure
+  - dimension_group: Install_date_field
     type: time
-    datatype: yyyymmdd
+    datatype: date
     timeframes: [date]
-    sql: ${TABLE}.date
+    sql: to_date(${TABLE}.install_date, 'yyyy-MM-dd')
     
     
 
