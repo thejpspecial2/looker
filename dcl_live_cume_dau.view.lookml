@@ -5,6 +5,10 @@
   - measure: cume_dau
     type: sum
     sql: ${TABLE}.cume_dau
+    
+  - measure: cume_payer_dau
+    type: sum
+    sql: ${TABLE}.cume_payer_dau  
 
   - measure: cume_installs
     type: sum
