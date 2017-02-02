@@ -2,9 +2,9 @@
   title: INJ2 Live Dashboard
   layout: grid
   rows:
-    - elements: [inj2_ios_revenue_live, inj2_ios_revenue_live] 
+    - elements: [inj2_ios_revenue_live] 
       height: 300      
-    - elements: [inj2_ios_installs_live, inj2_ios_installs_live]
+    - elements: [inj2_ios_installs_live]
       height: 300
 
       
