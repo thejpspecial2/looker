@@ -8,7 +8,7 @@
       height: 300  
 
       
-  refresh: 5 minutes
+  refresh: 60 minutes
   auto_run: true
   front_size: large
 
