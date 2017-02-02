@@ -4,8 +4,7 @@
   rows:
     - elements: [inj2_ios_revenue_live, inj2_ios_revenue_live] 
       height: 300      
-    - elements: [inj2_ios_revenue_live, inj2_ios_revenue_live] 
-      height: 300  
+ 
 
       
   refresh: 60 minutes
