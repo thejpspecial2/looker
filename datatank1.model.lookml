@@ -46,6 +46,7 @@
 - explore: fb_live_cume_revenue
 - explore: fb_live_cume_revenue_ios_daily
 - explore: inj2_live_cume_revenue
+- explore: inj2_live_cume_dau
 - view: fb_ios_live_rev
   derived_table: 
     sql: |
