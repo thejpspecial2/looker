@@ -49,6 +49,7 @@
 - explore: inj2_live_cume_dau
 - explore: inj2_live_cume_revenue_v2
 - explore: inj2_live_cume_dau_v2
+- explore: inj2_cohorted_kpi
 - view: fb_ios_live_rev
   derived_table: 
     sql: |
