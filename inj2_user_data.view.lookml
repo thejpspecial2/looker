@@ -2,7 +2,7 @@
   sql_table_name: public.inj2_user_data
   fields:
 
-  - measure: platform
+  - dimension: platform
     type: string
     sql: ${TABLE}.platform
 
