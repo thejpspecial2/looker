@@ -22,8 +22,8 @@
     type: string
     sql: ${TABLE}.os_version    
     
-  - measure: app_version
-    type: string
+  - dimension: app_version
+    type: sum
     sql: ${TABLE}.app_version  
     
   - dimension: device_name
@@ -46,7 +46,7 @@
     type: sum
     sql: ${TABLE}.hours_played      
     
-  - measure: purchase_indicator
+  - dimension: purchase_indicator
     type: string
     sql: ${TABLE}.purchase_indicator     
     
