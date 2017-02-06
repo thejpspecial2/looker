@@ -217,6 +217,14 @@
   - measure: unique_conversions
     type: sum
     sql: ${TABLE}.unique_conversions
+    
+  - measure: FUTE_started
+    type: sum
+    sql: ${TABLE}.FUTE_started    
+
+  - measure: FUTE_completed
+    type: sum
+    sql: ${TABLE}.FUTE_completed
 
   - measure: count
     type: count
