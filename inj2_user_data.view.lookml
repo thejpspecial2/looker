@@ -23,7 +23,7 @@
     sql: ${TABLE}.os_version    
     
   - dimension: app_version
-    type: sum
+    type: string
     sql: ${TABLE}.app_version  
     
   - dimension: device_name
