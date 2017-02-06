@@ -8,7 +8,7 @@
 
   - dimension: profile_id
     type: string
-    sql: ${TABLE}.country
+    sql: ${TABLE}.profile_id
 
   - dimension: country_tier
     type: string
