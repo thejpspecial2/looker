@@ -13,7 +13,7 @@
     - elements: [inj2_ios_pct_payers_live]
       height: 300  
       
-  refresh: 60 minutes
+  refresh: 15 minutes
   auto_run: true
   front_size: large
 
