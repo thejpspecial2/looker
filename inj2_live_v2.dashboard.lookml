@@ -9,7 +9,7 @@
     - elements: [inj2_ios_installs_cume, inj2_ios_installs_country] 
       height: 300
       
-  refresh: 15 minutes
+  refresh: 10 minutes
   auto_run: true
   front_size: large
 
