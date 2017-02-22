@@ -28,6 +28,7 @@
 - explore: dcl_item_acquisition
 - explore: kpis
 - explore: td_queue_summary
+- explore: inj_dau
 - explore: dcl_live_cume_dau
 - explore: dcl_live_cume_revenue
 - explore: dcl_live_cume_dau_v2
