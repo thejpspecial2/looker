@@ -10,3 +10,7 @@
     type: string
     sql: ${TABLE}.date    
     
+  - dimension: platform
+    type: string
+    sql: ${TABLE}.platform    
+    
