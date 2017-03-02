@@ -52,6 +52,7 @@
 - explore: inj2_live_cume_dau_v2
 - explore: inj2_cohorted_kpi
 - explore: inj2_user_data
+- explore: dcl_payers_20170301
 - view: fb_ios_live_rev
   derived_table: 
     sql: |
