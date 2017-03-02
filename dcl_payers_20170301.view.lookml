@@ -7,7 +7,7 @@
     sql: ${TABLE}.country
 
   - dimension: first_purchase_ts
-    type: number
+    type: string
     sql: ${TABLE}.first_purchase_ts
 
   - measure: iap_total_spend
@@ -29,7 +29,7 @@
     sql: to_date(${TABLE}.install_date, 'yyyy-MM-dd')
 
   - dimension: last_purchase_ts
-    type: number
+    type: string
     sql: ${TABLE}.last_purchase_ts
 
   - dimension: pid
