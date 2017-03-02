@@ -13,7 +13,7 @@
   - measure: iap_total_spend
     type: sum
     sql: ${TABLE}.iap_total_spend
-    value_format_name: decimal_0
+    value_format_name: decimal_2
 
   - measure: iap_transactions
     type: sum 
