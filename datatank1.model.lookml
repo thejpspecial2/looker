@@ -13,6 +13,11 @@
 #     - join: users
 #       sql_on: ${users.id} = ${orders.user_id}
 
+# these are redshift views
+- explore: jp_test_for_looker
+
+
+# these are data tank views
 - explore: dcl_segments_working_20161219
 - explore: dcl_cohorted_kpi
 - explore: dcl_kpi
