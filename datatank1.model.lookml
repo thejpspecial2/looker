@@ -19,6 +19,7 @@
 
 # these are data tank views
 - explore: dcl_segments_working_20161219
+- explore: dcl_max_character_rank_20170314
 - explore: dcl_cohorted_kpi
 - explore: dcl_kpi
 - explore: dcl_spenders
