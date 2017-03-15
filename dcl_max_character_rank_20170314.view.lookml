@@ -22,9 +22,21 @@
     type: string
     sql: ${TABLE}.platform
 
+  - dimension: max_level
+    type: number
+    sql: ${TABLE}.max_player_level    
+
+  - dimension: purchase_indicator
+    type: number
+    sql: ${TABLE}.purchase_indicator    
+    
   - measure: profile_id
     type: count
     #sql: ${TABLE}.profile_id
+
+  - measure: profile_id_distinct
+    type: count_distinct
+    sql: ${TABLE}.profile_id
 
   - dimension_group: install_dates_date
     type: time
