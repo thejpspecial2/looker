@@ -13,7 +13,13 @@
 #     - join: users
 #       sql_on: ${users.id} = ${orders.user_id}
 
+# these are redshift views
+- explore: jp_test_for_looker
+
+
+# these are data tank views
 - explore: dcl_segments_working_20161219
+- explore: dcl_max_character_rank_20170314
 - explore: dcl_cohorted_kpi
 - explore: dcl_kpi
 - explore: dcl_spenders
@@ -52,6 +58,7 @@
 - explore: inj2_live_cume_dau_v2
 - explore: inj2_cohorted_kpi
 - explore: inj2_user_data
+- explore: dcl_payers_20170301
 - view: fb_ios_live_rev
   derived_table: 
     sql: |
