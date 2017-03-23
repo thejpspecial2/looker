@@ -10,12 +10,12 @@
     type: number
     sql: ${TABLE}.time
 
-  - dimension: total_value
+  - measure: total_value
     type: sum
     sql: ${TABLE}.total_value
     value_format_name: decimal_2
 
-  - dimension: transaction
+  - measure: transaction
     type: sum
     sql: ${TABLE}.transaction
 
