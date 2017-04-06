@@ -120,6 +120,10 @@
     type: string
     sql: ${TABLE}.date
 
+  - dimension: date_day
+    type: date
+    sql: to_date(${TABLE}.date, 'yyyy-MM-dd')
+    
   - dimension_group: date_formatted
     type: time
     datatype: date
