@@ -130,6 +130,10 @@
     timeframes: [date]
     sql: to_date(${TABLE}.date, 'yyyy-MM-dd')    
 
+  - measure: sunday_indicator
+    type: sum
+    sql: CASE WHEN (to_date(${TABLE}.date, 'yyyy-MM-dd') - date '2017-01-01') % 7 = 0 THEN 1 ELSE 0 END
+    
   - measure: dau
     type: sum
     sql: ${TABLE}.dau
