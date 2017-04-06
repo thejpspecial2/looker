@@ -120,6 +120,12 @@
     type: string
     sql: ${TABLE}.date
 
+  - dimension_group: date_formatted
+    type: time
+    datatype: date
+    timeframes: [date]
+    sql: to_date(${TABLE}.date, 'yyyy-MM-dd')    
+
   - measure: dau
     type: sum
     sql: ${TABLE}.dau
