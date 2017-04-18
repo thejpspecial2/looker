@@ -60,6 +60,7 @@
 - explore: inj2_user_data
 - explore: dcl_payers_20170301
 - explore: dcl_revenue_check
+- explore: dcl_ua_20170418
 - view: fb_ios_live_rev
   derived_table: 
     sql: |
