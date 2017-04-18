@@ -261,6 +261,12 @@
     type: string
     sql: ${TABLE}.install_date
 
+  - dimension_group: install_dates_date
+    type: time
+    datatype: date
+    timeframes: [date]
+    sql: to_date(${TABLE}.install_date, 'yyyy-MM-dd')
+
   - dimension: platform
     type: string
     sql: ${TABLE}.platform
