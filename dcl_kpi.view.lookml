@@ -14,7 +14,11 @@
   - dimension: country_top20
     type: string
     sql: ${TABLE}.country_top20
-    
+  
+  - dimension: country_tier
+    type: string
+    sql: ${TABLE}.country_tier    
+  
   - dimension: platform
     type: string
     sql: ${TABLE}.platform
