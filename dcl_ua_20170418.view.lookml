@@ -2,12 +2,12 @@
   sql_table_name: public.dcl_ua_20170418
   fields:
 
-  - dimension: adjust_installs
-    type: string
+  - measure: adjust_installs
+    type: sum
     sql: ${TABLE}.adjust_installs
 
-  - dimension: adjust_installs_organic
-    type: number
+  - measure: adjust_installs_organic
+    type: sum
     sql: ${TABLE}.adjust_installs_organic
 
   - dimension: country
