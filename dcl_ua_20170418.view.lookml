@@ -55,9 +55,9 @@
     type: sum
     sql: ${TABLE}.dau
 
-  - measure: day0_rev
+  - measure: day0_revadjust_installs_organic
     type: sum
-    sql: ${TABLE}.day0_rev
+    sql: ${TABLE}.day0_revadjust_installs_organic
     value_format_name: decimal_2
 
   - measure: day10_rev
