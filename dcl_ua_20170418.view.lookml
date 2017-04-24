@@ -2,14 +2,6 @@
   sql_table_name: public.dcl_ua_20170418
   fields:
 
-  - measure: adjust_installs
-    type: sum
-    sql: ${TABLE}.adjust_installs
-
-  - measure: adjust_installs_organic
-    type: sum
-    sql: ${TABLE}.adjust_installs_organic
-
   - dimension: country
     type: string
     sql: ${TABLE}.country
@@ -54,11 +46,6 @@
   - measure: dau
     type: sum
     sql: ${TABLE}.dau
-
-  - measure: day0_revadjust_installs_organic
-    type: sum
-    sql: ${TABLE}.day0_revadjust_installs_organic
-    value_format_name: decimal_2
 
   - measure: day10_rev
     type: sum
@@ -199,7 +186,11 @@
     type: sum
     sql: ${TABLE}.revenue
     value_format_name: decimal_2
-
+    
+  - measure: daily_adjust_installs
+    type: sum
+    sql: ${TABLE}.daily_adjust_installs
+   
   - measure: session_count
     type: sum 
     sql: ${TABLE}.session_count
