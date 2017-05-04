@@ -61,7 +61,6 @@
       totals_color: '#808080'
       series_types: {}
       
-      
     - name: inj2_ios_installs_live
       title: INJ2 iOS Installs Live
       type: looker_line

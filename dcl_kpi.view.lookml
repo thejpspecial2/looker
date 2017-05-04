@@ -14,7 +14,11 @@
   - dimension: country_top20
     type: string
     sql: ${TABLE}.country_top20
-    
+  
+  - dimension: country_tier
+    type: string
+    sql: ${TABLE}.country_tier    
+  
   - dimension: platform
     type: string
     sql: ${TABLE}.platform
@@ -120,6 +124,20 @@
     type: string
     sql: ${TABLE}.date
 
+  - dimension: date_day
+    type: date
+    sql: to_date(${TABLE}.date, 'yyyy-MM-dd')
+    
+  - dimension_group: date_formatted
+    type: time
+    datatype: date
+    timeframes: [date]
+    sql: to_date(${TABLE}.date, 'yyyy-MM-dd')    
+
+  - measure: sunday_indicator
+    type: sum
+    sql: CASE WHEN (to_date(${TABLE}.date, 'yyyy-MM-dd') - date '2017-01-01') % 7 = 0 THEN 1 ELSE 0 END
+    
   - measure: dau
     type: sum
     sql: ${TABLE}.dau
