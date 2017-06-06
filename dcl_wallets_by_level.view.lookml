@@ -632,6 +632,91 @@
     sql: ${TABLE}.stamina_stddev_avg
     value_format_name: decimal_0
     
+  - measure: alliance_avg
+    type: avg
+    sql: ${TABLE}.alliance_avg
+    value_format_name: decimal_0
+
+  - measure: alliance_avg_10th_pct
+    type: avg
+    sql: ${TABLE}.alliance_avg_10th_pct
+    value_format_name: decimal_0
+
+  - measure: alliance_avg_25th_pct
+    type: avg
+    sql: ${TABLE}.alliance_avg_25th_pct
+    value_format_name: decimal_0
+
+  - measure: alliance_avg_50th_pct
+    type: avg
+    sql: ${TABLE}.alliance_avg_50th_pct
+    value_format_name: decimal_0
+
+  - measure: alliance_avg_75th_pct
+    type: avg
+    sql: ${TABLE}.alliance_avg_75th_pct
+    value_format_name: decimal_0
+
+  - measure: alliance_avg_90th_pct
+    type: avg
+    sql: ${TABLE}.alliance_avg_90th_pct
+    value_format_name: decimal_0
+
+  - measure: alliance_max_10th_pct
+    type: avg
+    sql: ${TABLE}.alliance_max_10th_pct
+    value_format_name: decimal_0
+
+  - measure: alliance_max_25th_pct
+    type: avg
+    sql: ${TABLE}.alliance_max_25th_pct
+    value_format_name: decimal_0
+
+  - measure: alliance_max_50th_pct
+    type: avg
+    sql: ${TABLE}.alliance_max_50th_pct
+    value_format_name: decimal_0
+
+  - measure: alliance_max_75th_pct
+    type: avg
+    sql: ${TABLE}.alliance_max_75th_pct
+    value_format_name: decimal_0
+
+  - measure: alliance_max_90th_pct
+    type: avg
+    sql: ${TABLE}.alliance_max_90th_pct
+    value_format_name: decimal_0
+
+  - measure: alliance_min_10th_pct
+    type: avg
+    sql: ${TABLE}.alliance_min_10th_pct
+    value_format_name: decimal_0
+
+  - measure: alliance_min_25th_pct
+    type: avg
+    sql: ${TABLE}.alliance_min_25th_pct
+    value_format_name: decimal_0
+
+  - measure: alliance_min_50th_pct
+    type: avg
+    sql: ${TABLE}.alliance_min_50th_pct
+    value_format_name: decimal_0
+
+  - measure: alliance_min_75th_pct
+    type: avg
+    sql: ${TABLE}.alliance_min_75th_pct
+    value_format_name: decimal_0
+
+  - measure: alliance_min_90th_pct
+    type: avg
+    sql: ${TABLE}.alliance_min_90th_pct
+    value_format_name: decimal_0
+
+  - measure: alliance_stddev_avg
+    type: avg
+    sql: ${TABLE}.alliance_stddev_avg
+    value_format_name: decimal_0
+    
   - measure: count
     type: count
     drill_fields: []
