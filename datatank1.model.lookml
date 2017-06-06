@@ -94,6 +94,7 @@
 - explore: fb_android_live_rev
 - explore: fb_live_cume_installs_android
 - explore: fb_live_cume_installs_ios
+- explore: inj2_live_cume_dau_ua
 
 - explore: inj_adjust_purchase_trans
   joins:

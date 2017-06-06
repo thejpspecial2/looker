@@ -189,9 +189,11 @@
     type: sum
     sql: ${TABLE}.iap_transactions
 
-  - dimension: install_date
-    type: string
-    sql: ${TABLE}.install_date
+  - dimension_group: install_date
+    type: time
+    datatype: date
+    timeframes: [date]
+    sql: to_date(${TABLE}.install_date, 'yyyy-MM-dd')
     
   - dimension: country
     type: string
